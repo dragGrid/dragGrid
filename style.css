@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-template-rows: repeat(4, 30px);
+    margin: auto;
+  }
+  
+  .grid-item {
+    border: 1px solid #666;
+    background-color: #ddd;
+    cursor: move;
+  }
+  
+  .grid-item.over {
+    border: 3px dotted #666;
+  }
+  
+  [draggable] {
+    user-select: none;
+  }
